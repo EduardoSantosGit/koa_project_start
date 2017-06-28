@@ -2,10 +2,8 @@
 
 var route = require('koa-route');
 
-exports.init = function (app) {   
-  app.use(route.get('/index', index));
-};
+let route_index = require('../controller/index');
 
-async function index(ctx) {
-    ctx.body = "Pagina Inicial"; 
-}
+exports.init = function (app) {   
+  app.use(route.post('/index', route_index.index));
+};
