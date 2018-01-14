@@ -1,22 +1,6 @@
-'use strict'
+import createServer from './src/lib/server'
 
-const Koa = require('koa');
-const koaConfig = require('./server/config/koa');
-const app = new Koa();
-
-module.exports = app;
-
-app.init = async function(){
-
-    koaConfig(app);
-
-    app.listen(3000);
-}
-
-
-if (!module.parent) {
-  app.init().catch(function (err) {
-    console.error(err);
-    process.exit(1);
-  });
-}
+createServer().then(app => {
+  app.listen(3000, () => {
+  })
+})
