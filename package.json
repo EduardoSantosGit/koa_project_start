@@ -8,18 +8,20 @@
   },
   "author": "eduardo",
   "license": "ISC",
-  "dependencies": {
-    "co": "^4.6.0",
-    "koa": "^2.4.1",
-    "koa-bodyparser": "^4.2.0",
-    "koa-route": "^3.2.0",
-    "koa-router": "^7.2.1"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-es2017": "^6.24.1",
-    "nodemon": "^1.14.3"
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "awilix": "^3.0.1",
+    "awilix-koa": "^2.0.0",
+    "kcors": "^2.2.1",
+    "koa": "^2.4.1",
+    "koa-convert": "^1.2.0",
+    "koa-respond": "^1.0.1",
+    "koa-router": "^7.2.1"
   }
 
 }
